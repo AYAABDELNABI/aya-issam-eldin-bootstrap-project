@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in to X</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .signin-container {
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .btn-google, .btn-apple {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .form-control {
+            background-color: #333;
+            border: none;
+            color: #fff;
+        }
+        .form-control:focus {
+            background-color: #444;
+            color: #fff;
+        }
+        .btn-primary {
+            background-color: #1da1f2;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0d8ddb;
+        }
+        .link {
+            color: #1da1f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="signin-container">
+        <h2>Sign in to X</h2>
+        <button class="btn btn-light btn-google">
+        <img src="https://img.icons8.com/color/16/000000/google-logo.png"/>Sign in with Google</button>
+        <button class="btn btn-dark btn-apple">
+            <img src="https://img.icons8.com/ios-filled/16/ffffff/mac-os.png"/> Sign in with Apple
+        </button>
+        <p>or</p>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Phone, email, or username">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Next</button>
+        </form>
+        <a href="#" class="link">Forgot password?</a>
+        <p>Don't have an account? <a href="#" class="link">Sign up</a></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

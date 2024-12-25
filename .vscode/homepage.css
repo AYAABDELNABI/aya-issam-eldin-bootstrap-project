@@ -1,0 +1,25 @@
+/* Base styles */
+body {
+  background-color: white;
+}
+
+/* Small devices (max-width: 600px) */
+@media (max-width: 600px) {
+  body {
+      background-color: white;
+  }
+}
+
+/* Medium devices (min-width: 601px and max-width: 1200px) */
+@media (min-width: 601px) and (max-width: 1200px) {
+  body {
+      background-color: white;
+  }
+}
+
+/* Large devices (min-width: 1201px) */
+@media (min-width: 1201px) {
+  body {
+      background-color: white;
+  }
+}

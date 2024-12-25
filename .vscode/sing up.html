@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+        }
+        .form-container input, .form-container select {
+            background-color: #333;
+            color: #fff;
+            border: none;
+        }
+        .form-container input:focus, .form-container select:focus {
+            background-color: #444;
+        }
+        .form-container .btn {
+            background-color: #444;
+            border: none;
+        }
+        .form-container .btn:hover {
+            background-color: #555;
+        }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="logo-container">
+            <img src="x.png" alt="Logo" width="100">
+        </div>
+        <h2 class="text-center">Create your account</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" maxlength="50" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of birth</label>
+                <small class="form-text text-muted">This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</small>
+                <div class="form-row">
+                    <div class="col">
+                        <select class="form-control" id="month">
+                            <option>Month</option>
+                            <!-- Add month options here -->
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select class="form-control" id="day">
+                            <option>Day</option>
+                            <!-- Add day options here -->
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select class="form-control" id="year">
+                            <option>Year</option>
+                            <!-- Add year options here -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-block">Next</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
